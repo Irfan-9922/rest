@@ -1,0 +1,27 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javteam.service;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+import org.javateam.db.MessageDatabase;
+import org.javateam.message.Message;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:3:30:11 am
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+public class MessageService {
+	
+	private static Map<Integer,Message> mess=MessageDatabase.getmessage();
+	
+	public ArrayList<Message> getallmessages(){
+		return new ArrayList<Message>(mess.values());
+	}
+
+}

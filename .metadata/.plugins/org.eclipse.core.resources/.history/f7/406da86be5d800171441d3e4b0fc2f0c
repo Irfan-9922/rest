@@ -1,0 +1,35 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.messenger.webservice;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.javateam.messenger.profilebo.user_profile;
+import org.javateam.messenger.service.messengesService;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:2:19:08 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+@Path("me")
+public class Messenger_service {
+	
+	messengesService service=new messengesService();
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public List<user_profile> getprofile(){
+		return service.showprofile();
+	
+		
+	}
+
+}

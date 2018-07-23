@@ -1,0 +1,32 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.resource;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.javateam.model.Message;
+import org.javateam.model.service.MessageService;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:8:43:44 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+@Path("hi")
+public class messageresource {
+	MessageService service=new MessageService();
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public List<Message> shoe(){
+		return service.getallmessages();
+	}
+
+}

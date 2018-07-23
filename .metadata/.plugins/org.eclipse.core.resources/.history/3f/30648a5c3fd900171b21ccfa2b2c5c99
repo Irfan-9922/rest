@@ -1,0 +1,15 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javteam.service;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:3:30:11 am
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+public class MessageService {
+
+}

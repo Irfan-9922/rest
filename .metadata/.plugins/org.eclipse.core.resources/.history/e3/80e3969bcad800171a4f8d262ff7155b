@@ -1,0 +1,22 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.messenger.profile;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.javateam.messenger.profilebo.profile;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:1:18:00 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class Profiles {
+	
+	private List<profile> listOfProfiles=new ArrayList();
+
+}

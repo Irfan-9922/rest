@@ -1,0 +1,15 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:5:28:40 am
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+public class Strudent {
+
+}

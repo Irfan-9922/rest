@@ -1,0 +1,18 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.mkyong.rest;
+
+import javax.ws.rs.ApplicationPath;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:12:43:08 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+@ApplicationPath("he")
+public class app {
+
+}

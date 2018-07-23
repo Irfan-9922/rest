@@ -1,0 +1,68 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.javateam.model.Student;
+
+import sun.applet.Main;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:5:31:20 am
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+public class StudentService {
+	public static Map<Integer,Student> student=new HashMap();
+	
+	
+	/**
+	 * 
+	 */
+	public StudentService() {
+		student.put(1, new Student(10, "irfan", "shivaji"));
+		student.put(2, new Student(11, "nisar", "dccl"));
+		student.put(3, new Student(12, "samir", "nit"));
+	}
+	public List< Student> getallStudent(){
+		return new ArrayList<Student>(student.values());
+		
+	}
+	
+	public Student getById(int id){
+		return student.get(id);
+	}
+	public Student creatStudent(Student s){
+		s.setStudentId(s.getStudentId()+1);
+		return student.put(s.getStudentId(), s);
+	}
+	public void remove(int id){
+		student.remove(id);
+	}
+	
+	public Student updatest(Student s){
+		s.getStudentId();
+		
+		return student.put(s.getStudentId(), s);
+	}
+	public static void main(String[] args) {
+		StudentService s=new StudentService();
+		Student ss=new Student();
+		System.out.println(s.getallStudent());
+		System.out.println(s.getById(1));
+		//System.out.println(s.remove(2));
+		Student g=new Student(10, "irfan", "shivaji");
+		
+		s.remove(1);
+		s.creatStudent(ss);
+		System.out.println(s.getallStudent());
+	}
+
+}

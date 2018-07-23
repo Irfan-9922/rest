@@ -1,0 +1,33 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.javateam.model.Message;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:9:02:58 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class MessageService {
+	
+	public List<Message> getallmessages(){
+		
+		Message m1=new Message(1, "hello",  "irfan");
+		Message m2=new Message(2, "hi",  "nisar");
+		Message m3=new Message(3, "hi pooja",  "irfan");
+		List<Message> m=new ArrayList();
+		m.add(m1);
+		m.add(m2);
+		m.add(m3);
+		return m;
+		
+	}
+
+}

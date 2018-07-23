@@ -1,0 +1,38 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.messenger.profilebo;
+
+import java.util.Date;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:1:22:10 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class profile {
+	public int profileId;
+	private String profileName;
+	private Date profileCreatedDate;
+	public int getProfileId() {
+		return profileId;
+	}
+	public void setProfileId(int profileId) {
+		this.profileId = profileId;
+	}
+	public String getProfileName() {
+		return profileName;
+	}
+	public void setProfileName(String profileName) {
+		this.profileName = profileName;
+	}
+	public Date getProfileCreatedDate() {
+		return profileCreatedDate;
+	}
+	public void setProfileCreatedDate(Date profileCreatedDate) {
+		this.profileCreatedDate = profileCreatedDate;
+	}
+	
+}

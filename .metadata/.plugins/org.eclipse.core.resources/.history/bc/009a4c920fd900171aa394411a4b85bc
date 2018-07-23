@@ -1,0 +1,15 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:9:52:35 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class Profile {
+
+}

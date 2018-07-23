@@ -1,0 +1,67 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+import java.util.Date;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:9:52:35 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class Profile {
+	private int id;
+	private String profileName;
+	/**
+	 * 
+	 */
+	public Profile() {
+	
+		// TODO Auto-generated constructor stub
+	}
+	private String firstName;
+	private String lastname;
+	private Date createddate;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getProfileName() {
+		return profileName;
+	}
+	public void setProfileName(String profileName) {
+		this.profileName = profileName;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+	public Date getCreateddate() {
+		return createddate;
+	}
+	public void setCreateddate(Date createddate) {
+		this.createddate = createddate;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Profile [id=" + id + ", profileName=" + profileName + ", firstName=" + firstName + ", lastname="
+				+ lastname + ", createddate=" + createddate + "]";
+	}
+
+}

@@ -1,0 +1,35 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.resource;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.javateam.model.Student;
+import org.javateam.service.StudentService;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:6:11:12 am
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+@Path("/student")
+public class resource {
+	StudentService ser=new StudentService();
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List< Student> getall(){
+		return ser.getallStudent();
+	}
+	
+	
+
+}

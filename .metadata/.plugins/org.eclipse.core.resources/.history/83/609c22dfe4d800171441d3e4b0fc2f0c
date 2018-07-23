@@ -1,0 +1,34 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.messenger.profile.db;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.javateam.messenger.profilebo.user_profile;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:1:28:50 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class profiledb {
+	
+	private static List<user_profile> listOfProfiles=new ArrayList();
+	
+	public static void addprofile(user_profile p){
+		listOfProfiles.add(p);
+		System.out.println("profile created successfully");
+	
+	}
+	public static List<user_profile> getProfile(){
+		System.out.println("controll in db");
+		System.out.println(listOfProfiles);
+		return listOfProfiles;
+	}
+	
+
+}

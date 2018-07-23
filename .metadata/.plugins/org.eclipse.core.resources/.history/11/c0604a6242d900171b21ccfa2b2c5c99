@@ -1,0 +1,36 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.resources;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.javateam.message.Message;
+import org.javteam.service.MessageService;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:3:44:52 am
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+@Path("/messages")
+public class MessageResource {
+	MessageService se=new MessageService();
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	
+	public List<Message> getall(){
+		ArrayList al=se.getallmessages();
+		return al;
+		
+	}
+
+}

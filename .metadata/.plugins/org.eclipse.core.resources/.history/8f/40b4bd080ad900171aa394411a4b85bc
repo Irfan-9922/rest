@@ -1,0 +1,58 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+import java.util.Date;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:8:57:27 pm
+ *DATE:04-Dec-2017
+ *TAGS:
+ */
+public class Message {
+	private int id;
+	/**
+	 * @param id
+	 * @param message
+	 * @param date
+	 * @param auther
+	 */
+	public Message(int id, String message,  String auther) {
+		super();
+		this.id = id;
+		this.message = message;
+		this.date =new  Date();
+		this.auther = auther;
+	}
+	private String message;
+	private Date date;
+	private String auther;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public String getAuther() {
+		return auther;
+	}
+	public void setAuther(String auther) {
+		this.auther = auther;
+	}
+
+}
